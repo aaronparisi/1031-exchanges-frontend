@@ -1,0 +1,35 @@
+@import "../colors";
+
+.info-site {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  #main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $dark-red;
+    position: absolute;
+    bottom: 82%;
+    right: 5%;
+    text-align: center;
+    line-height: .5;
+
+    #down-arrow {
+      position: absolute;
+      top: 45px;
+
+      .link-icon {
+        filter: $dark-red-filter;
+      }
+  
+      .hovered-link-icon {
+        filter: none;
+        filter: $darker-red-filter;
+      }
+    }
+    
+  }
+}

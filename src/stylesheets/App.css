@@ -22,4 +22,70 @@ button, input {
   border: none;
   background: none; }
 
+a {
+  display: block;
+  width: max-content; }
+
+.info-site {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .info-site #main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #875A5C;
+    position: absolute;
+    bottom: 82%;
+    right: 5%;
+    text-align: center;
+    line-height: .5; }
+    .info-site #main-header #down-arrow {
+      position: absolute;
+      top: 45px; }
+      .info-site #main-header #down-arrow .link-icon {
+        filter: invert(43%) sepia(18%) saturate(718%) hue-rotate(308deg) brightness(86%) contrast(94%); }
+      .info-site #main-header #down-arrow .hovered-link-icon {
+        filter: none;
+        filter: invert(33%) sepia(4%) saturate(3984%) hue-rotate(307deg) brightness(85%) contrast(85%); }
+
+html, body, .root {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  min-width: 100%; }
+
+.hero-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  transform: rotate(180deg); }
+  .hero-container .hero-image {
+    display: block;
+    width: 100%;
+    height: auto !important;
+    transform: rotate(180deg); }
+
+h1 {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-size: calc(16px + 6 * ((100vw - 320px) / 80)); }
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.link-icon {
+  margin: 0px; }
+
+.hovered-link-icon {
+  height: 100px; }
+
 /*# sourceMappingURL=App.css.map */

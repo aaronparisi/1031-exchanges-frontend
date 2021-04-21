@@ -1,10 +1,13 @@
 import React from 'react';
+import { Route } from 'react-router-dom'
+
+import InfoSiteContainer from '../InfoSite/InfoSiteContainer';
 
 function App() {
   return (
-    <div className="App">
-      Hello from App
-    </div>
+    <React.Fragment >
+      <Route path="/" component={InfoSiteContainer} />
+    </React.Fragment>
   );
 }
 
